@@ -1,0 +1,158 @@
+/* ═══════════════════════════════════════════════════════════════
+   RISING CAKES MEXICALI — Global Styles
+   Premium Bakery Design System
+   ═══════════════════════════════════════════════════════════════ */
+
+@import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;0,700;1,400;1,500&family=Outfit:wght@300;400;500;600;700;800&display=swap');
+
+:root {
+  /* ── Color Palette (Refined Premium) ── */
+  --cocoa: #2A1810;
+  --cocoa-light: #3C261C;
+  --cocoa-mid: #5A3D2E;
+  --caramel: #BE8E68;
+  --caramel-dark: #9E7454;
+  --caramel-light: #D2AA84;
+  --caramel-pale: #E8D0B4;
+  --vanilla: #E4D1BC;
+  --linen: #FAF7F3;
+  --warm: #F3EBE1;
+  --cream: #FFFCF8;
+  --mocha: #887260;
+  --mocha-light: #A6937E;
+  --rose: #C8636C;
+  --rose-dark: #A84F57;
+  --rose-light: #F5D8DB;
+  --sage: #4D7A5B;
+  --sage-light: #E6F0E9;
+  --sage-dark: #3B6148;
+  --gold: #C49A44;
+  --gold-light: #FAF2E2;
+  --white: #FFFFFF;
+  --black: #1A1612;
+
+  /* ── Typography ── */
+  --font-display: 'Cormorant Garamond', Georgia, 'Times New Roman', serif;
+  --font-body: 'Outfit', -apple-system, BlinkMacSystemFont, sans-serif;
+
+  /* ── Spacing Scale ── */
+  --sp-xs: 4px;
+  --sp-sm: 8px;
+  --sp-md: 16px;
+  --sp-lg: 24px;
+  --sp-xl: 40px;
+  --sp-2xl: 64px;
+  --sp-3xl: 96px;
+
+  /* ── Shadows (warm-tinted) ── */
+  --sh-xs: 0 1px 2px rgba(42,24,16,0.04);
+  --sh-sm: 0 2px 6px rgba(42,24,16,0.05);
+  --sh-md: 0 4px 16px rgba(42,24,16,0.07);
+  --sh-lg: 0 8px 32px rgba(42,24,16,0.09);
+  --sh-xl: 0 20px 56px rgba(42,24,16,0.12);
+}
+
+/* ── Reset & Base ── */
+*, *::before, *::after { margin: 0; padding: 0; box-sizing: border-box; }
+
+html { scroll-behavior: smooth; -webkit-text-size-adjust: 100%; }
+
+body {
+  font-family: var(--font-body);
+  background: var(--linen);
+  color: var(--cocoa);
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  line-height: 1.6;
+  overflow-x: hidden;
+}
+
+::selection { background: var(--caramel-pale); color: var(--cocoa); }
+
+img { display: block; max-width: 100%; }
+button { font-family: inherit; cursor: pointer; }
+input, select, textarea { font-family: var(--font-body); }
+
+input:focus, select:focus, textarea:focus {
+  border-color: var(--caramel) !important;
+  box-shadow: 0 0 0 3px rgba(190, 142, 104, 0.12);
+  outline: none;
+}
+
+/* ── Scrollbar ── */
+::-webkit-scrollbar { width: 6px; height: 6px; }
+::-webkit-scrollbar-track { background: var(--warm); }
+::-webkit-scrollbar-thumb { background: var(--vanilla); border-radius: 3px; }
+::-webkit-scrollbar-thumb:hover { background: var(--caramel-light); }
+
+/* ═══════════════════════════════════════════════════════════════
+   KEYFRAME ANIMATIONS
+   ═══════════════════════════════════════════════════════════════ */
+@keyframes fadeIn {
+  from { opacity: 0; }
+  to { opacity: 1; }
+}
+
+@keyframes fadeSlideUp {
+  from { opacity: 0; transform: translateY(20px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+@keyframes fadeSlideDown {
+  from { opacity: 0; transform: translateY(-12px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+@keyframes slideUp {
+  from { transform: translateY(24px); opacity: 0; }
+  to { transform: translateY(0); opacity: 1; }
+}
+
+@keyframes slideInRight {
+  from { transform: translateX(100%); }
+  to { transform: translateX(0); }
+}
+
+@keyframes popIn {
+  0% { transform: scale(0.4); opacity: 0; }
+  70% { transform: scale(1.08); }
+  100% { transform: scale(1); opacity: 1; }
+}
+
+@keyframes spin {
+  to { transform: rotate(360deg); }
+}
+
+@keyframes confettiFall {
+  0% { transform: translateY(-10px) rotate(0deg); opacity: 1; }
+  100% { transform: translateY(100vh) rotate(720deg); opacity: 0; }
+}
+
+@keyframes shimmer {
+  0% { background-position: -200% 0; }
+  100% { background-position: 200% 0; }
+}
+
+@keyframes scaleIn {
+  from { transform: scale(0.95); opacity: 0; }
+  to { transform: scale(1); opacity: 1; }
+}
+
+@keyframes float {
+  0%, 100% { transform: translateY(0); }
+  50% { transform: translateY(-8px); }
+}
+
+/* ═══════════════════════════════════════════════════════════════
+   RESPONSIVE BREAKPOINTS
+   ═══════════════════════════════════════════════════════════════ */
+@media (max-width: 768px) {
+  .desk-nav { display: none !important; }
+  .mob-btn { display: block !important; }
+  .mobile-cart-bar { display: flex !important; }
+}
+
+@media (min-width: 769px) {
+  .mob-btn { display: none !important; }
+  .mobile-cart-bar { display: none !important; }
+}
