@@ -304,7 +304,7 @@ const Nav = () => {
         <div onClick={()=>go("home")} style={{cursor:"pointer",display:"flex",alignItems:"baseline",gap:6}}>
           <span style={{fontSize:30,fontFamily:F.d,fontWeight:500,color:C.cocoa,letterSpacing:-.5}}>Rising</span>
           <span style={{fontSize:30,fontFamily:F.d,fontWeight:600,color:C.caramel,fontStyle:"italic",letterSpacing:-.5}}>Cakes</span>
-          <span style={{fontSize:13,fontFamily:"'Dancing Script', cursive",fontWeight:500,color:C.mochaL,marginLeft:2}}>by BejaranoG</span>
+          <span style={{fontSize:13,fontFamily:"'Dancing Script', cursive",fontWeight:700,color:C.mochaL,marginLeft:2}}>by BejaranoG</span>
         </div>
 
         {/* Desktop links */}
@@ -349,7 +349,7 @@ const Foot = () => {
           <div style={{display:"flex",alignItems:"baseline",gap:6,marginBottom:14,flexWrap:"wrap"}}>
             <span style={{fontSize:26,fontFamily:F.d,fontWeight:500,color:"#fff"}}>Rising</span>
             <span style={{fontSize:26,fontFamily:F.d,fontWeight:600,color:C.caramelL,fontStyle:"italic"}}>Cakes</span>
-            <span style={{fontSize:12,fontFamily:"'Dancing Script', cursive",fontWeight:500,color:C.mochaL,marginLeft:2}}>by BejaranoG</span>
+            <span style={{fontSize:12,fontFamily:"'Dancing Script', cursive",fontWeight:700,color:C.mochaL,marginLeft:2}}>by BejaranoG</span>
           </div>
           <p style={{fontSize:14,lineHeight:1.7,color:C.caramelL,margin:0,maxWidth:280}}>Pasteles artesanales hechos con amor en Mexicali, Baja California. Cada celebraci\u00f3n merece la perfecci\u00f3n.</p>
         </div>
