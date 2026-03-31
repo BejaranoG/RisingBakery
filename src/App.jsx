@@ -304,6 +304,7 @@ const Nav = () => {
         <div onClick={()=>go("home")} style={{cursor:"pointer",display:"flex",alignItems:"baseline",gap:6}}>
           <span style={{fontSize:30,fontFamily:F.d,fontWeight:500,color:C.cocoa,letterSpacing:-.5}}>Rising</span>
           <span style={{fontSize:30,fontFamily:F.d,fontWeight:600,color:C.caramel,fontStyle:"italic",letterSpacing:-.5}}>Cakes</span>
+          <span style={{fontSize:13,fontFamily:"'Dancing Script', cursive",fontWeight:500,color:C.mochaL,marginLeft:2}}>by BejaranoG</span>
         </div>
 
         {/* Desktop links */}
@@ -345,9 +346,10 @@ const Foot = () => {
     <footer style={{background:C.cocoa,color:C.vanilla,padding:"60px 28px 36px"}}>
       <div style={{maxWidth:1200,margin:"0 auto",display:"grid",gridTemplateColumns:"repeat(auto-fit, minmax(210px, 1fr))",gap:40,marginBottom:40}}>
         <div>
-          <div style={{display:"flex",alignItems:"baseline",gap:6,marginBottom:14}}>
+          <div style={{display:"flex",alignItems:"baseline",gap:6,marginBottom:14,flexWrap:"wrap"}}>
             <span style={{fontSize:26,fontFamily:F.d,fontWeight:500,color:"#fff"}}>Rising</span>
             <span style={{fontSize:26,fontFamily:F.d,fontWeight:600,color:C.caramelL,fontStyle:"italic"}}>Cakes</span>
+            <span style={{fontSize:12,fontFamily:"'Dancing Script', cursive",fontWeight:500,color:C.mochaL,marginLeft:2}}>by BejaranoG</span>
           </div>
           <p style={{fontSize:14,lineHeight:1.7,color:C.caramelL,margin:0,maxWidth:280}}>Pasteles artesanales hechos con amor en Mexicali, Baja California. Cada celebraci\u00f3n merece la perfecci\u00f3n.</p>
         </div>
@@ -1048,7 +1050,7 @@ const Router = () => {
 export default function App() {
   return <RP><CartProv>
     <style>{`
-      @import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;0,700;1,400;1,500&family=Outfit:wght@300;400;500;600;700;800&display=swap');
+      @import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;0,700;1,400;1,500&family=Dancing+Script:wght@400;500;600;700&family=Outfit:wght@300;400;500;600;700;800&display=swap');
       *{margin:0;padding:0;box-sizing:border-box}
       html{scroll-behavior:smooth}
       body{font-family:'Outfit',-apple-system,sans-serif;background:#FAF7F3;color:#2A1810;-webkit-font-smoothing:antialiased;line-height:1.6;overflow-x:hidden}
